@@ -4,12 +4,8 @@ import Base_simp from "./simpson comp/Base_simp";
 function App() {
     return (
         <div>
-            1. Описати всю сім'ю сімпсонів (5 персонажів)
+            {/*1. Описати всю сім'ю сімпсонів (5 персонажів)*/}
 
-            2. Створити компонент який описує персонажа (властивості id,name,status,species,gender,image) з цього апі
-            https://rickandmortyapi.com/
-            https://rickandmortyapi.com/api/character
-            Створити 6 персонажів
             <Base_simp name={'Bart'} surname={'Simpson'} age={'10'} info={'Bart Simpson ' +
                 'is a fictional character in the American animated television series'}
                        image={'https://t.ly/3SDY'}
