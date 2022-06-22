@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.main_rick_div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.rick_div{
+  width: 20%;
+}
