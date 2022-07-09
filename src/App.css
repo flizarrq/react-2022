@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+.Comment, .Todo, .Album {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
