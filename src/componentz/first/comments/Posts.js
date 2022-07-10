@@ -1,21 +1,21 @@
 import React, {useEffect, useState} from 'react';
-import {useParams} from "react-router-dom";
+import {Outlet, useParams} from "react-router-dom";
 import {getPostOfComment} from "../../services/service";
 import Post from "./Post";
 
 function Posts() {
     const {postId} = useParams();
 
-    const [posts,setPosts] = useState([]);
+    const [post,setPost] = useState(null);
 
     useEffect(() => {
-        getPostOfComment(postId).then(value => setPosts([{value}]))
+        getPostOfComment(postId).then(value => setPost(value))
     },[postId])
 
     return (
         <div>
-            {/*erorr*/}
-            {posts.map(post => <Post key={post.id} post={post}/>)}
+
+            {post && <Post post={post}/>}
         </div>
     );
 }
