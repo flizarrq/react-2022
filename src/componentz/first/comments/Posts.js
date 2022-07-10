@@ -14,6 +14,7 @@ function Posts() {
 
     return (
         <div>
+            {/*erorr*/}
             {posts.map(post => <Post key={post.id} post={post}/>)}
         </div>
     );
