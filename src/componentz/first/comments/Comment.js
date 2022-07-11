@@ -5,7 +5,6 @@ import {Link, Outlet} from "react-router-dom";
 function Comment({comment:{postId,id,name,email,body}}) {
     return (
         <div>
-            <Outlet/>
             <div className={'Comment'}>
                 <div>id: {id}</div>
                 <div>name: {name}</div>

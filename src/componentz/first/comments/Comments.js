@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {getComments} from "../../services/service";
 import Comment from "./Comment";
+import {Outlet} from "react-router-dom";
 
 function Comments(props) {
     const [comments,setComments] = useState([]);
@@ -10,6 +11,7 @@ function Comments(props) {
     },[])
     return (
         <div>
+            <Outlet/>
             {comments.map(comment => <Comment key={comment.id} comment={comment}/>)}
         </div>
 
